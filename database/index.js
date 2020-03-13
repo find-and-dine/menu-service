@@ -1,11 +1,13 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/menuService', { useNewUrlParser: true });
+const PORT = 27017;
+
+mongoose.connect(`mongodb://localhost:${PORT}/menuService`, { useNewUrlParser: true });
 
 const db = mongoose.connection;
 
 db.once('open', () => {
-  console.log('db connection for menu API open on port');
+  console.log(`db connection for menu API open on port: ${PORT}`);
 });
 
 db.on('error', (err) => {

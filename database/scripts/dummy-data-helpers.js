@@ -46,13 +46,13 @@ const generateMenuItems = () => {
   return menuItems;
 };
 
-// method that takes a menu and generates an array of 2-7 sections
+// method that generates an array of 2-7 sections
 // (some w/ a name string, some without)
 const generateSections = () => {
   const numOfSections = Math.floor(Math.random() * 6) + 2;
   const sections = [];
   for (let i = 0; i < numOfSections; i += 1) {
-    const showSectionName = Math.random > 0.25;
+    const showSectionName = Math.random() > 0.25;
     sections.push({
       // 1/4 of sections will have no title.
       sectionName: showSectionName ? `${faker.random.word()} ${faker.random.word()}` : '',
@@ -64,7 +64,7 @@ const generateSections = () => {
 
 const menuOptions = ['Dinner', 'Lunch', 'Breakfast'];
 
-// method that takes a restaurant and generates an array of 1-3 menus (breakfast, lunch, or dinner)
+// method that generates an array of 1-3 menus (breakfast, lunch, or dinner)
 const generateMenus = () => {
   const numOfMenus = Math.floor(Math.random() * 3);
   const menus = [];
