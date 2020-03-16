@@ -14,7 +14,7 @@
     "build": "webpack",
     "build-dev": "webpack -w",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .                                                                                       "
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -36,6 +36,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
