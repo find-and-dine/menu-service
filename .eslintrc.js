@@ -19,10 +19,10 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module',
+    babelOptions: {
+      configFile: "./babelrc"
+    },
   },
-  babelOptions: {
-    configFile: "./babelrc"
-  }
   plugins: [
     'react',
   ],
