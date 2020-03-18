@@ -7,10 +7,12 @@ mongoose.connect(`mongodb://localhost:${PORT}/menuService`, { useNewUrlParser: t
 const db = mongoose.connection;
 
 db.once('open', () => {
+  // eslint-disable-next-line no-console
   console.log(`db connection for menu API open on port: ${PORT}`);
 });
 
 db.on('error', (err) => {
+  // eslint-disable-next-line no-console
   console.log('menu API db connection error: ', err);
 });
 

@@ -5,7 +5,6 @@ const db = require('../database/index.js');
 const app = express();
 const PORT = 3002;
 
-// TODO: update once static public files are available
 app.use(express.static(path.resolve(__dirname, '..', 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -23,5 +22,6 @@ app.get('/api/menu/:id', (req, res) => {
 });
 
 app.listen(PORT, () => {
+  // eslint-disable-next-line no-console
   console.log('listening, on port: ', PORT);
 });
