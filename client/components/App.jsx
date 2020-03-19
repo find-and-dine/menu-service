@@ -14,7 +14,6 @@ class App extends React.Component {
       showModal: false,
     };
     this.getMenus = this.getMenus.bind(this);
-    this.conditionalRender = this.conditionalRender.bind(this);
     this.handleOpenModal = this.handleOpenModal.bind(this);
     this.handleCloseModal = this.handleCloseModal.bind(this);
   }
@@ -45,13 +44,13 @@ class App extends React.Component {
     this.setState({ showModal: false });
   }
 
-  conditionalRender() {
+  render() {
     const { theseMenus, menuLoaded, showModal } = this.state;
     const firstSection = menuLoaded ? theseMenus[0].sections[0] : '';
 
     // Only attempts to render once component mounts and state updates
-    return menuLoaded
-      ? (
+    if (menuLoaded) {
+      return (
         <div>
           <ReactModal
             isOpen={showModal}
@@ -77,12 +76,9 @@ class App extends React.Component {
             <Footer />
           </div>
         </div>
-      )
-      : <div>loading menu</div>;
-  }
-
-  render() {
-    return this.conditionalRender();
+      );
+    }
+    return <div>loading menu</div>;
   }
 }
 
