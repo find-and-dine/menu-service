@@ -14,7 +14,7 @@ function MenuPreviewItem({ menuItem }) {
         </div>
       </div>
       <div className="previewMenuItemPrices">
-        {prices.map((price) => (<div>{price}</div>))}
+        {prices.map((price) => (<div key={price + Math.random() * 10000}>{price}</div>))}
       </div>
     </div>
   );
