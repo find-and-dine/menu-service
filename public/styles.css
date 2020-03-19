@@ -1,0 +1,70 @@
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.menuServiceAppBlock {
+  font-family: 'DM Sans', sans-serif;
+  min-width: 768px;
+  display: block;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  flex-grow: 1;
+  margin: 24px 0;
+  padding: 0 24px;
+}
+.dividerBorder {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+.previewSectionTitle {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  padding-top: 20px;
+  padding-bottom: 1px;
+}
+.previewFirstFourItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 13px;
+}
+.previewMenuItem {
+  display: flex;
+  width: 50%;
+  max-width: 48%;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+.previewMenuItemName {
+  font-size: 13px;
+  line-height: 17px;
+  padding-bottom: 2px;
+  color: #000a12;
+}
+.previewMenuItemDescription {
+  font-size: 11px;
+  line-height: 15px;
+  color: #4a4a4a;
+}
+.previewMenuItemPrices {
+  text-align: right;
+  font-size: 13px;
+  line-height: 17px;
+  color: #4a4a4a;
+}
+.previewFooter {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.previewFooterItem {
+  margin-left: 4px;
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  vertical-align: top;
+}
