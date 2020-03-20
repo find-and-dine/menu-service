@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import CompleteMenuListing from '../client/components/CompleteMenuListing'
 
 it('mounts', () => {
-  const wrap = shallow(<CompleteMenuListing />
-  );
+  const wrap = CompleteMEnuListing();
   expect(wrap.exists());
 });
