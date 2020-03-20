@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Footer from '../client/components/Footer'
 
-
 it('mounts', () => {
   const wrap = shallow(<Footer />
   );
@@ -23,4 +22,3 @@ it('mounts', () => {
   )
   ).toBeTruthy()*/
 });
-

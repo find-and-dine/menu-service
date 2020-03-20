@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from '../client/components/App'
+import MenuPreview from '../client/components/MenuPreview'
 
 it('mounts', () => {
-  const wrap = shallow(<App />
+  const wrap = shallow(<MenuPreview />
   );
   expect(wrap.exists());
 });
