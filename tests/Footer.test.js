@@ -8,9 +8,9 @@ describe('Footer component', () => {
       <Footer />
     )
     expect(wrap.containsMatchingElement(
-        <span className="previewFooterItem">
-          Show full menu
-        </span>
+      <span className="previewFooterItem">
+        Show full menu
+      </span>
       )
     ).toBeTruthy()
   })
