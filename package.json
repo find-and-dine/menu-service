@@ -15,7 +15,6 @@
     "build-dev": "webpack -w",
     "test": "jest --coverage",
     "lint": "eslint .",
-    "testSetup": "setupTests.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
