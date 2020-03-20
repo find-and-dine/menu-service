@@ -8,7 +8,7 @@ describe('Footer component', () => {
       <Footer />
     )
   expect(
-    wrap.find('previewFooterItem').text()
+    wrap.find('span').text()
   ).toEqual('Show full menu');
     // TODO: come back and debug matchingElement test
     /* expect(wrap.containsMatchingElement(
