@@ -1,5 +1,6 @@
-function sum(a, b) {
-  return a + b;
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
 
-module.exports = sum;
+// eslint-disable-next-line react/jsx-filename-extension
+ReactDOM.render(<App />, document.getElementById('app'));
