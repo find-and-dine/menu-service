@@ -13,7 +13,7 @@
     "seed": "node database/scripts/seed.js",
     "build": "webpack",
     "build-dev": "webpack -w",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint ."
   },
   "dependencies": {
