@@ -14,7 +14,7 @@
     "build": "webpack",
     "build-dev": "webpack -w",
     "test": "jest --coverage",
-    "lint": "eslint .",
+    "lint": "eslint ."
   },
   "dependencies": {
     "axios": "^0.19.2",
