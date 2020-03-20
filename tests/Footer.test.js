@@ -11,7 +11,7 @@ describe('Footer component', () => {
         <span className="previewFooterItem">
           Show full menu
         </span>
-      ).toBeTruthy()
-    )
+      )
+    ).toBeTruthy()
   })
 });
