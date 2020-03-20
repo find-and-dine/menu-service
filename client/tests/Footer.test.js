@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import Footer from '../components/Footer'
 
 describe('Footer component', () => {
-  it('mounts'() => {
+  it('mounts', () => {
     const wrap = shallow(
       <Footer />
     )
