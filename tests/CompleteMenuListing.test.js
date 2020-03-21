@@ -1,14 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CompleteMenuListing from '../client/components/CompleteMenuListing'
+import CompleteMenuListing from '../client/components/CompleteMenuListing';
+import sampleRestaurant from './setup/sampleRestaurant';
 
-const dummyProps = {
-  menu: {
-    sections: ['one', 'two', 'three']
-  }
-};
+
+
 
 it('mounts', () => {
-  const wrap = CompleteMenuListing(dummyProps);
+  const wrap = shallow(
+    <CompleteMenuListing
+      menu={sampleRestaurant.menus[0]}
+    />
+  );
   expect(wrap.exists());
 });

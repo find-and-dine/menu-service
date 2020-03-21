@@ -4,8 +4,8 @@ import Footer from '../client/components/Footer'
 
 it('mounts', () => {
   const wrap = shallow(<Footer />
-  );
-  expect(wrap.exists());
+    );
+    expect(wrap.exists());
   // TODO: come back and debug matchingElement test
   expect(wrap.containsMatchingElement(
     <div className="previewFooter">
