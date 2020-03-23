@@ -1,5 +1,4 @@
 package-lock.json
 package.json
-**bundle.json
+**bundle.js
 **/*.test.js
-**/*.test.jsx

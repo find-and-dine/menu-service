@@ -13,7 +13,7 @@
     "seed": "node database/scripts/seed.js",
     "build": "webpack",
     "build-dev": "webpack -w",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -48,5 +48,10 @@
     "jest": "^25.1.0",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/tests/setup/setupTests.js"
+    ]
   }
 }
