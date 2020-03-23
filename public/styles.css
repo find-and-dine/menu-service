@@ -13,6 +13,7 @@ h2 {
   flex-grow: 1;
   margin: 24px 0;
   padding: 0 24px;
+  outline: none !important;
 }
 .dividerBorder {
   width: 100%;
@@ -20,9 +21,9 @@ h2 {
 }
 .previewSectionTitle {
   padding-bottom: 20px;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 19px;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  line-height: 19px !important;
   padding-top: 20px;
   padding-bottom: 1px;
 }
@@ -31,30 +32,32 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 20px;
-  font-size: 13px;
+  font-size: 13px !important;
 }
 .previewMenuItem {
   display: flex;
   width: 50%;
-  max-width: 48%;
+  max-width: 46%;
   padding-bottom: 20px;
   justify-content: space-between;
 }
 .previewMenuItemName {
-  font-size: 13px;
-  line-height: 17px;
-  padding-bottom: 2px;
+  font-size: 13px !important;
+  line-height: 17px !important;
+  padding-bottom: 2px !important;
   color: #000a12;
 }
 .previewMenuItemDescription {
-  font-size: 11px;
-  line-height: 15px;
+  font-size: 11px !important;
+  line-height: 15px !important;
   color: #4a4a4a;
 }
 .previewMenuItemPrices {
   text-align: right;
-  font-size: 13px;
-  line-height: 17px;
+  font-size: 13px !important;
+  line-height: 17px !important;
+  margin-right: 10px;
+  margin-left: 10px;
   color: #4a4a4a;
 }
 .previewFooter {
@@ -67,4 +70,98 @@ h2 {
   font-size: 14px;
   font-weight: 700;
   vertical-align: top;
+}
+.ReactModal__Content {
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 710px;
+  height: 85%;
+  padding: 0px !important;
+  border-radius: 0px !important;
+}
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, .8) !important;
+}
+.modal {
+  font-family: 'DM Sans', sans-serif !important;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100% !important;
+  padding: 0px;
+}
+.menuOptions {
+  padding-top: 23px;
+  padding-left: 23px;
+}
+.menuSectionsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 68% !important;
+}
+.menuSections {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+}
+.menuModalHeader {
+  display: flex;
+  background-color: #f2f2f2 !important;
+  vertical-align: middle !important;
+  font-size: 14px !important;
+  padding-left: 26px !important;
+  padding-right: 48px !important;
+  padding: 16px 0;
+  font-weight: 700 !important;
+  line-height: 16px !important;
+}
+.menuModalFooter {
+  margin-left: 515px;
+  margin-top: 10px;
+}
+.menuNameButton {
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #000;
+  margin: 0 8px 8px 0;
+  font-weight: 400;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  outline: none !important;
+}
+.menuNameButtonSelected {
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid #000;
+  margin: 0 8px 8px 0;
+  font-weight: 400;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  background: #000;
+  color: #fff;
+  outline: none !important;
+}
+#closeModal {
+  float: right !important;
+  font-size: 32px;
+  color: #4a4a4a;
+  cursor: pointer;
+  padding-left: 615px;
+  outline: none !important;
 }
