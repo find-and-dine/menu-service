@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import axios from 'axios';
 import ReactModal from 'react-modal';
@@ -8,10 +9,12 @@ import MenuModal from './MenuModal';
 class App extends React.Component {
   constructor(props) {
     super(props);
+    const { id } = this.props;
     this.state = {
       theseMenus: [],
       menuLoaded: false,
       showModal: false,
+      restaurantID: id,
     };
     this.getMenus = this.getMenus.bind(this);
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -19,8 +22,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // TODO: get current menu from props
-    this.getMenus(9);
+    const { restaurantID } = this.state;
+    this.getMenus(restaurantID);
     ReactModal.setAppElement('body');
   }
 
