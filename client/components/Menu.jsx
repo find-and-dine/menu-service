@@ -28,7 +28,8 @@ class Menu extends React.Component {
   }
 
   getMenus(id) {
-    axios.get(`/api/menu/${id}`)
+    // TODO: will need updated once using Docker
+    axios.get(`http://localhost:3002/api/menu/${id}`)
       .then((data) => {
         this.setState({
           theseMenus: data.data[0].menus,

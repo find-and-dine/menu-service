@@ -21,6 +21,7 @@ class MenuModal extends React.Component {
     });
   }
 
+  // TODO: img src will need updated once using Docker
   render() {
     const {
       menus, currentMenu, handleCloseModal, handleKeyPress,
@@ -58,7 +59,7 @@ class MenuModal extends React.Component {
         </div>
         <div className="menuModalFooter">
           <img
-            src="../resources/poweredBy.png"
+            src="http://localhost:3002/api/resources/poweredBy"
             alt=""
             height="38px"
             width="auto"

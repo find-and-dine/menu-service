@@ -11,6 +11,18 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/api/bundle', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '..', 'public', 'bundle.js'));
+});
+
+app.get('/api/resources/menuIcon', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '..', 'public', 'resources', 'menuIcon.png'));
+});
+
+app.get('/api/resources/poweredBy', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '..', 'public', 'resources', 'poweredBy.png'));
+});
+
 app.get('/api/menu/:id', (req, res) => {
   const { id } = req.params;
 
