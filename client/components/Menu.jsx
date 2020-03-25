@@ -6,7 +6,7 @@ import Footer from './Footer';
 import MenuPreview from './MenuPreview';
 import MenuModal from './MenuModal';
 
-class App extends React.Component {
+class Menu extends React.Component {
   constructor(props) {
     super(props);
     const { id } = this.props;
@@ -85,4 +85,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Menu;
