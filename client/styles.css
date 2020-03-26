@@ -1,10 +1,11 @@
 
-h2 {
+#menu h2 {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
 }
-.menuServiceAppBlock {
+
+#menu .menuServiceAppBlock {
   font-family: 'DM Sans', sans-serif;
   min-width: 768px;
   display: block;
@@ -17,11 +18,13 @@ h2 {
   background-color: white;
   cursor: pointer;
 }
-.dividerBorder {
+
+.menu-dividerBorder {
   width: 100%;
   border-bottom: 1px solid #e5e5e5;
 }
-.previewSectionTitle {
+
+#menu .previewSectionTitle {
   padding-bottom: 20px;
   font-weight: 700 !important;
   font-size: 15px !important;
@@ -29,32 +32,37 @@ h2 {
   padding-top: 20px;
   padding-bottom: 1px;
 }
-.previewFirstFourItems {
+
+.menu-previewFirstFourItems {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 20px;
   font-size: 13px !important;
 }
-.previewMenuItem {
+
+.menu-previewMenuItem {
   display: flex;
   width: 50%;
   max-width: 46%;
   padding-bottom: 20px;
   justify-content: space-between;
 }
-.previewMenuItemName {
+
+.menu-previewMenuItemName {
   font-size: 13px !important;
   line-height: 17px !important;
   padding-bottom: 2px !important;
   color: #000a12;
 }
-.previewMenuItemDescription {
+
+.menu-previewMenuItemDescription {
   font-size: 11px !important;
   line-height: 15px !important;
   color: #4a4a4a;
 }
-.previewMenuItemPrices {
+
+.menu-previewMenuItemPrices {
   text-align: right;
   font-size: 13px !important;
   line-height: 17px !important;
@@ -62,10 +70,12 @@ h2 {
   margin-left: 10px;
   color: #4a4a4a;
 }
+
 .previewFooter {
   padding-bottom: 20px;
   padding-top: 20px;
 }
+
 .previewFooterItem {
   margin-left: 4px;
   line-height: 18px;
@@ -73,6 +83,7 @@ h2 {
   font-weight: 700;
   vertical-align: top;
 }
+
 .ReactModal__Content {
   font-family: 'DM Sans', sans-serif;
   display: flex;
@@ -88,10 +99,12 @@ h2 {
   padding: 0px !important;
   border-radius: 0px !important;
 }
+
 .ReactModal__Overlay {
   background-color: rgba(0, 0, 0, .8) !important;
 }
-.modal {
+
+.menu-modal {
   font-family: 'DM Sans', sans-serif !important;
   overflow-x: hidden;
   margin-left: auto;
@@ -100,10 +113,12 @@ h2 {
   height: 100% !important;
   padding: 0px;
 }
+
 .menuOptions {
   padding-top: 23px;
   padding-left: 23px;
 }
+
 .menuSectionsContainer {
   display: flex;
   flex-direction: column;
@@ -111,6 +126,7 @@ h2 {
   padding-right: 25px;
   height: 68% !important;
 }
+
 .menuSections {
   display: flex;
   flex-direction: column;
@@ -129,10 +145,12 @@ h2 {
   font-weight: 700 !important;
   line-height: 16px !important;
 }
+
 .menuModalFooter {
   margin-left: 515px;
   margin-top: 10px;
 }
+
 .menuNameButton {
   border-radius: 3px;
   cursor: pointer;
@@ -145,6 +163,7 @@ h2 {
   line-height: 16px;
   outline: none !important;
 }
+
 .menuNameButtonSelected {
   border-radius: 3px;
   cursor: pointer;
@@ -159,7 +178,8 @@ h2 {
   color: #fff;
   outline: none !important;
 }
-#closeModal {
+
+#menu-closeModal {
   float: right !important;
   font-size: 32px;
   color: #4a4a4a;

@@ -74,9 +74,9 @@ class Menu extends React.Component {
             onKeyPress={this.handleKeyPress}
           >
             <h2>Menu</h2>
-            <div className="dividerBorder" />
+            <div className="menu-dividerBorder" />
             <MenuPreview section={firstSection} />
-            <div className="dividerBorder" />
+            <div className="menu-dividerBorder" />
             <Footer />
           </div>
         </div>

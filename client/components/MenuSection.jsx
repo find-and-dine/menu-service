@@ -6,10 +6,10 @@ function MenuSection({ section }) {
   const { sectionName, menuItems } = section;
   return (
     <div>
-      <div className="previewMenuItemName">
+      <div className="menu-previewMenuItemName">
         {sectionName}
       </div>
-      <div className="previewFirstFourItems">
+      <div className="menu-previewFirstFourItems">
         {menuItems.map((menuItem) => (
           <MenuPreviewItem
             menuItem={menuItem}

@@ -28,11 +28,11 @@ class MenuModal extends React.Component {
     } = this.state;
     const menuNames = menus.map((menu) => (menu.menuName));
     return (
-      <div className="modal">
+      <div className="menu-modal">
         <div className="menuModalHeader">
           <span>Menu</span>
           <span
-            id="closeModal"
+            id="menu-closeModal"
             role="button"
             tabIndex={0}
             onClick={handleCloseModal}
@@ -55,7 +55,7 @@ class MenuModal extends React.Component {
           <div className="menuSections">
             <CompleteMenuListing menu={menus[menuNames.indexOf(currentMenu)]} />
           </div>
-          <div className="dividerBorder" />
+          <div className="menu-dividerBorder" />
         </div>
         <div className="menuModalFooter">
           <img

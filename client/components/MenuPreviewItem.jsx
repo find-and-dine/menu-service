@@ -4,16 +4,16 @@ import React from 'react';
 function MenuPreviewItem({ menuItem }) {
   const { prices, menuItemName, description } = menuItem;
   return (
-    <div className="previewMenuItem">
+    <div className="menu-previewMenuItem">
       <div>
-        <div className="previewMenuItemName">
+        <div className="menu-previewMenuItemName">
           {menuItemName}
         </div>
-        <div className="previewMenuItemDescription">
+        <div className="menu-previewMenuItemDescription">
           {description}
         </div>
       </div>
-      <div className="previewMenuItemPrices">
+      <div className="menu-previewMenuItemPrices">
         {prices.map((price) => (<div key={price + Math.random() * 10000}>{price}</div>))}
       </div>
     </div>

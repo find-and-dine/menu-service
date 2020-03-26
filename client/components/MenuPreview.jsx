@@ -10,7 +10,7 @@ function MenuPreview({ section }) {
       <div className="previewSectionTitle">
         {sectionName.toUpperCase()}
       </div>
-      <div className="previewFirstFourItems">
+      <div className="menu-previewFirstFourItems">
         {firstFourItems.map((item) => (
           <MenuPreviewItem
             menuItem={item}
